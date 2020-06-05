@@ -3,7 +3,7 @@ import importlib
 moduleName = input("DNA.txt")
 importlib.import_module(moduleName)
 
-inputfile ="DNA_sequence_original.txt"
+inputfile ="DNA.txt"
 f = open(inputfile, "r") 
 seq = f.read() 
 seq = seq.replace("\n", "") 
