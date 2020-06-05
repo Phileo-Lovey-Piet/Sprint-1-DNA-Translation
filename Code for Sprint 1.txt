@@ -33,8 +33,8 @@ def mutate(inputfile):
         seq = seq.replace("a", "A") 
 	return seq 
 
-mutate("normalDNA.txt")
-mutate("mutatedDNA.txt")
+print(mutate("normalDNA.txt"))
+print(mutate("mutatedDNA.txt"))
 
 def txtTranslate():
     with open("normalDNA.txt","r") as f:
@@ -42,7 +42,7 @@ def txtTranslate():
     with open("mutatedDNA.txt","r") as g:
         mDNA = g.read()
 
-    translate(nDNA)
-    translate(mDNA)
+    return translate(nDNA)
+    return translate(mDNA)
 
 txtTranslate()
